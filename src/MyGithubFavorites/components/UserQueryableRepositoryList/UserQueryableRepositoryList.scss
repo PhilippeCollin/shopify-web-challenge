@@ -1,0 +1,16 @@
+.UserQueriableRepositoryList {
+  .SearchForm {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+
+  .SearchForm button {
+    align-self: flex-end;
+    margin-left: 15px;
+  }
+
+  .SearchForm input {
+    flex-grow: 1;
+  }
+}

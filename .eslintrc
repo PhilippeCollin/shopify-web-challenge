@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "plugin:shopify/esnext",
+    "plugin:shopify/node",
+    "plugin:shopify/typescript",
+    "plugin:shopify/typescript-react",
+    "plugin:shopify/typescript-prettier",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "rules": {
+    "shopify/strict-component-boundaries": false
+  },
+  "plugins": ["import"]
+}

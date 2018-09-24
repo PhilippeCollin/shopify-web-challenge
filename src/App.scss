@@ -1,0 +1,73 @@
+input[type='text'] {
+  border-radius: 5px;
+  box-shadow: none;
+  border: solid 1px;
+  padding: 0 20px;
+  height: 45px;
+}
+
+button {
+  padding: 0 20px;
+  height: 48px;
+  min-width: 145px;
+  background-color: #7437eb;
+  border-radius: 5px;
+  border-style: none;
+  color: #fff;
+  font-weight: 600;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #350d83;
+  transition: background-color 50ms linear;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.Container {
+  display: flex;
+  padding: 10px;
+  padding: 45px;
+  justify-content: flex-start;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.color-primary {
+  color: #7437eb;
+}
+
+.bg-primary {
+  background-color: #7437eb;
+}
+
+.bg-primary-light {
+  background-color: #f3eafc;
+}
+
+a.decoration-onhover {
+  text-decoration: none;
+  color: black;
+
+  :hover {
+    text-decoration: underline;
+  }
+}
+
+.AppContent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-bottom: 100px;
+}

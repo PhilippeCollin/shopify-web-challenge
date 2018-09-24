@@ -1,0 +1,17 @@
+.MyGithubFavorites {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  .SplitPane {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  .Pane {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+}

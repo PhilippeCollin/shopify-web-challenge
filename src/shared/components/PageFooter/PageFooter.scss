@@ -1,0 +1,24 @@
+.PageFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  position: fixed;
+
+  .sourceCode {
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    a {
+      color: white;
+
+      &:visited {
+        color: white;
+      }
+    }
+  }
+}

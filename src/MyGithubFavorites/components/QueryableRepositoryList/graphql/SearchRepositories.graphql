@@ -1,0 +1,27 @@
+query SearchRepositories($query: String!) {
+  search(query: $query, first: 10, type: REPOSITORY) {
+    edges {
+      node {
+        ... on Repository {
+          id
+          nameWithOwner
+          primaryLanguage {
+            name
+          }
+          url
+          refs(
+            refPrefix: "refs/tags/"
+            first: 1
+            orderBy: {field: TAG_COMMIT_DATE, direction: DESC}
+          ) {
+            edges {
+              tag: node {
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
